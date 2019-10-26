@@ -1,5 +1,5 @@
 {
-  "name": "oslo",
+  "name": "oslo-events",
   "version": "1.0.0",
   "description": "For quickly scraping data from adb logs on the Pixel 4/4 XL on different motion sense events",
   "main": "oslo.js",
@@ -12,5 +12,13 @@
     "adb"
   ],
   "author": "Matt Schlosser <hello@mattschlosser.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattschlosser/oslo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattschlosser/oslo/issues"
+  },
+  "homepage": "https://github.com/mattschlosser/oslo#readme"
 }
