@@ -1,4 +1,4 @@
- # Oslo
+#Oslo Events
 
  For easily scraping data from the adb logs to access motion sensor data on the Pixel 4/4 XL.
 
@@ -43,3 +43,10 @@ These will only fire if something is subscribed to listen to that event. (e.g. t
 * `PRESENCE 0`
 
 These events always fire, regardless of subscription status. 
+
+## ADB Troubleshooting
+
+If you experience issues getting this to run (e.g. you get the `-- wating for device--` message), you may need to set the USB mode on your phone to file transfer mode,
+as well as enabling USB Debugging mode. 
+
+
