@@ -2,12 +2,13 @@
 
  For easily scraping data from the adb logs to access motion sensor data on the Pixel 4/4 XL.
 
- 1. Download adb tools and connect your phone to computer by USB debugging. Ensure the path var to adb is set correctly.
+ 1. Download adb tools and connect your phone to computer by USB debugging. Ensure the path var to adb is set correctly. For more info 
+on setting this up, see more on how to [configure on-device developer options](https://developer.android.com/studio/debug/dev-options).
  2. Install the dependency:
  ```
 npm install oslo-events
 ```
- 2. Create a file and subscribe  to events of your liking. These take the classic form of `.on(event, callback)` like so:
+ 3. Create a file and subscribe  to events of your liking. These take the classic form of `.on(event, callback)` like so:
 ```js
 const Oslo = require('oslo-events');
 const oslo = new Oslo();
