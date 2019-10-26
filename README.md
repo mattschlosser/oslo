@@ -48,3 +48,17 @@ These events always fire, regardless of subscription status.
 
 If you experience issues getting this to run (e.g. you get the `-- wating for device--` message), you may need to set the USB mode on your phone to file transfer mode,
 as well as enabling USB Debugging mode. 
+
+## Cool Example
+If you have Ubuntu, lock your screen when your Pixel detects you leave
+
+```js
+const {spawn} = require('child_process');
+const Oslo = require('oslo-events');
+const oslo = new Oslo();
+// when the user leaves
+oslo.on('PRESENCE 0', () => {
+   // send a terminal command to lock the screen
+   spawn('xdg-screensaver', ['lock']);
+});
+```
