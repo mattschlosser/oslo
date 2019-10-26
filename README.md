@@ -7,7 +7,7 @@
  ```
 npm install oslo-events
 ```
- 2. Create a file and subscribe  to evnets of your liking. These take the classic form of `.on(event, callback)` like so:
+ 2. Create a file and subscribe  to events of your liking. These take the classic form of `.on(event, callback)` like so:
 ```js
 const Oslo = require('oslo-events');
 const oslo = new Oslo();
@@ -16,7 +16,7 @@ oslo.on('flick', (data) => {
     console.log(data);
 });
 
-oslo.on('FLICK 1 SOUTH`, () => {
+oslo.on('FLICK 1 SOUTH', () => {
     console.log("USER FLICKED SOUTH");
 })
 ```
