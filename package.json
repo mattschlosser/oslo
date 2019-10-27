@@ -1,6 +1,6 @@
 {
   "name": "oslo-events",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "For quickly scraping data from adb logs on the Pixel 4/4 XL on different motion sense events",
   "main": "oslo.js",
   "scripts": {
@@ -9,7 +9,8 @@
   "keywords": [
     "oslo",
     "pixel",
-    "adb"
+    "adb",
+    "soli"
   ],
   "author": "Matt Schlosser <hello@mattschlosser.me>",
   "license": "MIT",

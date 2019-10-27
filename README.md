@@ -1,6 +1,10 @@
 # Oslo Events
 
- For easily scraping data from the adb logs to access motion sensor data on the Pixel 4/4 XL.
+ For easily scraping data from the ADB logs to access the Motion Sense data on the Pixel 4/4 XL. This is named Oslo because Oslo was the code name while the
+ Pixel 4 was in development. It is part of a wider project known as [Project Soli](https://atap.google.com/soli/)
+
+
+
 
 ```
 npm i oslo-events
