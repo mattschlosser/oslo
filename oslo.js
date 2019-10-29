@@ -5,7 +5,7 @@ const {spawn} = require('child_process');
 class Oslo {
     x = {};
     constructor() {
-        this.r = spawn('adb', ['logcat'])
+        this.r = spawn('adb', ['logcat', '-b', 'main', '--regex=(to NanoApp)|(Oslo.*output)'])
         this.r.stdout.on('data', (data) => {
             data.toString().split('\n').forEach((line,i) => {;
                 let k = line.match(/[oO][sS][lL][oO]\/OsloMetrics: logEvent: Oslo (.*)? output:/);
