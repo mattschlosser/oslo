@@ -8,7 +8,7 @@ class Oslo {
         this.r = spawn('adb', ['logcat', '-b', 'main', '--regex=(to NanoApp)|(Oslo.*output)'])
         this.r.stdout.on('data', (data) => {
             data.toString().split('\n').forEach((line,i) => {;
-                let k = line.match(/[oO][sS][lL][oO]\/OsloMetrics: logEvent: Oslo (.*)? output:/);
+                let k = line.match(/Oslo (.*)? output:/);
                 if (k) {
                     let payload = {};
                     let event = k[1];
@@ -33,7 +33,7 @@ class Oslo {
                         this.x[event].forEach(e => e(payload));
                     }
                 }
-                let l = line.match(/[oO][sS][lL][oO].*?Sent (.*)? to NanoApp/);
+                let l = line.match(/Sent (.*)? to NanoApp/);
                 if (l) {
                     let event = l[1];
                     if (this.x[event]) {
